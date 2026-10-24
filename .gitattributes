@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+# Additional protection for archives; these files are also in .gitignore.
+Task.md export-ignore
+task.md export-ignore
+docs/task-audit.md export-ignore
