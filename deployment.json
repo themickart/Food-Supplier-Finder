@@ -1,0 +1,8 @@
+{
+  "source_commit": "68c613e41f95a4a86212ab2bc6114083ddb662f7",
+  "source_branch": "main",
+  "deployment_branch": "gh-pages",
+  "runtime": "standalone",
+  "site_url": "https://themickart.github.io/Food-Supplier-Finder/",
+  "built_at": "2026-10-24T09:08:08.077Z"
+}
