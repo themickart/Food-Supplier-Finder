@@ -24,6 +24,9 @@ test('cards come first; wheel over the table scrolls the page and selected actio
 
 test('calculator uses price units, minimum and explicit rounding; old brand is recoverable', async ({ page }) => {
   await page.goto('./')
+  // The static HTML title can arrive before the dynamically loaded app mounts.
+  // Wait for the interface before choosing the responsive navigation path.
+  await expect(page.getByRole('heading', { name: 'Каталог поставщиков', exact: true })).toBeVisible()
   await expect(page).toHaveTitle(/FSUP/)
   if (await page.getByRole('button', { name: 'Открыть меню', exact: true }).isVisible()) {
     await page.getByRole('button', { name: 'Открыть меню', exact: true }).click()
