@@ -22,4 +22,4 @@
 
 Обновление выполняется из чистой main командой node scripts/publish-pages.mjs --push после установки frontend-зависимостей. Сборка проверяется перед публикацией. README и deployment.json генерируются автоматически; содержимое ветки вручную не редактировать.
 
-Исходный коммит: [42b74e91ea096c75c0aa9ece556d5e5ebaadc6df](https://github.com/themickart/Food-Supplier-Finder/commit/42b74e91ea096c75c0aa9ece556d5e5ebaadc6df).
+Исходный коммит: [4c87c34848fc7210ae1ed5f9506136d4f46a4443](https://github.com/themickart/Food-Supplier-Finder/commit/4c87c34848fc7210ae1ed5f9506136d4f46a4443).
