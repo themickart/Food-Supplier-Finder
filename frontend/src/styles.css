@@ -149,11 +149,12 @@ h1 { font-family: inherit; font-size: 31px; line-height: 1.3; font-weight: 650; 
 .filter-panel-head > div { display: flex; align-items: center; gap: 9px; color: #8c7bcc; }
 .filter-panel-head h2 { font-size: 16px; color: #39415d; font-weight: 600; }
 .filter-panel-head span { color: #a29bb4; font-size: 12px; margin-left: 6px; }
-.filter-sections { display: grid; grid-template-columns: 1fr 1fr 1.15fr; gap: 25px; padding: 20px 0; }
+.filter-sections { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.15fr); gap: 25px; padding: 20px 0; }
+.filter-sections > section { min-width: 0; }
 .filter-sections section + section { border-left: 1px solid #ececf4; padding-left: 24px; }
 .filter-sections h3 { font-size: 13px; font-weight: 600; margin-bottom: 19px; color: #505674; }
 .filter-sections label:not(.check-line), .import-form label, .preset-form label { display: flex; flex-direction: column; gap: 7px; font-size: 12px; color: #747c94; margin: 13px 0; }
-.filter-sections input, .filter-sections select { width: 100%; font-size: 12px; }
+.filter-sections input:not([type=checkbox]):not([type=radio]), .filter-sections select { width: 100%; font-size: 12px; }
 .filter-sections select { padding: 9px 7px; }
 .check-line, .radio-line { display: flex; align-items: center; gap: 9px; font-size: 13px; color: #747c92; margin: 14px 0; cursor: pointer; }
 .filter-sections .check-line { font-size: 12px; margin: 17px 0; }
@@ -473,7 +474,7 @@ details summary { cursor: pointer; color: #b197c2; font-size: 12px; }
   .mode-caption { font-size: 10px; }
   .demo-banner { font-size: 11px; }
   .demo-banner button { font-size: 10px; }
-  .filter-sections { grid-template-columns: 1fr 1fr; }
+  .filter-sections { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .filter-sections section:last-child { grid-column: 1 / -1; border-left: 0; padding-left: 0; border-top: 1px solid var(--border); padding-top: 20px; }
   .scope-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .integration-grid { gap: 12px; }
